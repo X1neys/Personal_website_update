@@ -28,6 +28,8 @@
 .project-tech span { padding: .35rem .55rem; background: var(--paper); color: var(--ink); font-size: .76rem; font-weight: 600; }
 .project-gallery { display: grid; height: 180px; overflow: hidden; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--line); background: #fff; }
 .project-gallery img { width: 100%; height: 180px; object-fit: cover; object-position: center 35%; }
+.project-gallery-single { display: flex; height: auto; min-height: 0; justify-content: center; }
+.project-gallery-single img { width: 100%; height: auto; max-height: 320px; object-fit: contain; object-position: center; }
 
 .beyond-card i { display: inline-block; margin-bottom: 1rem; color: var(--ink); font-size: 1.5rem; }
 .beyond-card:nth-child(3n + 1) { border-top: 3px solid var(--coral); }
@@ -49,4 +51,6 @@
 @media (max-width: 767.98px) {
 	.project-preview, .project-gallery { min-height: 150px; height: 150px; }
 	.project-gallery img { height: 150px; }
+	.project-gallery-single { height: auto; }
+	.project-gallery-single img { height: auto; max-height: 220px; }
 }
